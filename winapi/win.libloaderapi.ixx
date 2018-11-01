@@ -1,16 +1,14 @@
-// cl /experimental:module /EHsc /MD /std:c++latest win.libloaderapi.ixx win._core.ixx
+// cl /experimental:module /EHsc /MD /std:c++latest /utf-8 win.libloaderapi.ixx win._core.ixx
 export module win.libloaderapi;
 import win._core;
 
 namespace winapi {
-export {
-;
-}
 
 namespace C {
 extern "C" {
-    __declspec(dllimport) HMODULE __stdcall GetModuleHandleW(LPCWSTR);
+    HMODULE GetModuleHandleW(LPCWSTR);
 }}
 
-export auto GetModuleHandle = C::GetModuleHandleW;
-}
+export {
+    auto GetModuleHandle = C::GetModuleHandleW;
+}}
