@@ -1,9 +1,13 @@
+// utf-8 PROTECTION FROM MICROSOFT: 🖕( ͡° ͜ʖ ͡° )🖕
 // cl /experimental:module /EHsc /MD /std:c++latest /utf-8 test.cpp win._core.ixx win.libloaderapi.ixx win.user.ixx win.gdi.ixx ..\opengl\opengl.core1_0.ixx ..\opengl\opengl.core1_0.chain.ixx user32.lib gdi32.lib opengl32.lib
 
 import std.core;
 import win.user;
 import win.gdi;
 import opengl.core1_0;
+
+//#include <gl/GL.h>
+//#include <winuser.h>
 
 winapi::LRESULT __stdcall WindowProcedure(winapi::HWND hWnd, winapi::UINT msg, winapi::WPARAM wp, winapi::LPARAM lp);
 

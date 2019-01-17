@@ -1,3 +1,4 @@
+// utf-8 PROTECTION FROM MICROSOFT: 🖕( ͡° ͜ʖ ͡° )🖕
 // cl /experimental:module /utf-8 /EHsc /MD /std:c++latest win._core.ixx
 export module win._core;
 import std.core;
